@@ -25,12 +25,6 @@
             <version>${sonar.buildVersion}</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>org.sonarsource.sonarqube</groupId>
-            <artifactId>sonar-core</artifactId>
-            <version>${sonar.buildVersion}</version>
-            <scope>provided</scope>
-        </dependency>
 
         <dependency>
             <groupId>com.google.guava</groupId>

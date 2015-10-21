@@ -1,8 +1,6 @@
 package ua.pp.kaeltas;
 
 import com.google.common.base.Optional;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.sonar.api.batch.Sensor;
 import org.sonar.api.batch.SensorContext;
 import org.sonar.api.batch.fs.FileSystem;
@@ -10,10 +8,12 @@ import org.sonar.api.config.Settings;
 import org.sonar.api.resources.Project;
 
 import java.util.Date;
+import org.sonar.api.utils.log.Logger;
+import org.sonar.api.utils.log.Loggers;
 
 public class ExampleSensor implements Sensor {
 
-    private static final Logger LOG = LoggerFactory.getLogger(ExampleSensor.class);
+    private static final Logger LOG = Loggers.get(ExampleSensor.class);
 
     private Settings settings;
     private FileSystem fs;

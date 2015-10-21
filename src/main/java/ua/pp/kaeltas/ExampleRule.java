@@ -1,16 +1,16 @@
 package ua.pp.kaeltas;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.sonar.api.batch.BatchSide;
 import org.sonar.api.rule.RuleStatus;
 import org.sonar.api.rule.Severity;
 import org.sonar.api.server.rule.RulesDefinition;
+import org.sonar.api.utils.log.Logger;
+import org.sonar.api.utils.log.Loggers;
 
 @BatchSide
 public class ExampleRule implements RulesDefinition {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ExampleRule.class);
+    private static final Logger LOGGER = Loggers.get(ExampleRule.class);
 
     public ExampleRule() {
         if (LOGGER.isDebugEnabled()) {
